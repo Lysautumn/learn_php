@@ -80,5 +80,23 @@
         }
       ?>
     </p>
+    <p>
+      <?php
+        // For loops
+        for ($i = 2; $i < 11; $i = $i + 2) {
+          echo $i;
+        }
+      ?>
+    </p>
+    <p>
+      <?php
+        // do-while loop
+        $i = 0;
+        do {
+            echo "This is running!";
+            $i++;
+        } while($i < 10);
+    ?>
+    </p>
 	</body>
 </html>
