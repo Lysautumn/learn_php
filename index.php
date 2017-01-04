@@ -99,7 +99,28 @@
     ?>
     </p>
     <p>
-      
+			<?php
+	// random winner generator
+	// Create an array and push in names of contestants
+        $contestants = array();
+        array_push($contestants, "Chris");
+        array_push($contestants, "Karen");
+        array_push($contestants, "John");
+        array_push($contestants, "Scout");
+        array_push($contestants, "Gatsby");
+        array_push($contestants, "Keebler");
+        array_push($contestants, "Kassi");
+        array_push($contestants, "Mary");
+        array_push($contestants, "Todd");
+	// Sort the array
+        sort($contestants);
+	// Randomly select a winner!
+	    $count = count($contestants) - 1;
+	    $index = rand(0, $count);
+	    $winner = $contestants[$index];
+	// Print the winner's name in ALL CAPS
+	    print strtoupper($winner);
+	?>
     </p>
 	</body>
 </html>
