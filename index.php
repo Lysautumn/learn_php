@@ -142,6 +142,7 @@
         $teacher = new Person("boring", "12345", 12345);
         $student = new Person("ally", "boyd", 31);
         echo $teacher->isAlive;
+				echo $teacher->age;
         echo $student->age;
         echo $teacher->greet();
         echo $student->greet();
